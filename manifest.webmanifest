@@ -1,0 +1,16 @@
+{
+  "name": "RC 단면 내력 계산기 · 3D FEM",
+  "short_name": "RC 내력",
+  "lang": "ko",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#eef0f1",
+  "theme_color": "#1f5f8b",
+  "description": "RC·복합 단면 휨·전단·축 내력, M-N 상관도, M-φ, 사용성, 보 해석, 3D 비선형 FEM (土木学会 示方書)",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
