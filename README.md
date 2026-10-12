@@ -15,7 +15,7 @@
 
 세 가지 방법:
 1. **파일로 전달 (가장 간단)**: `dist/index.html` 하나를 카톡·메일·USB 로 보낸다. PC 는 더블클릭, iPhone 은 파일 앱에서 열어 Safari 로, Android 는 Chrome 으로 열면 된다. 인터넷 없이도 동작 (글꼴만 기본 글꼴로 바뀜).
-2. **웹 주소로 공유 + 홈 화면 앱 (추천)**: `dist/` 안의 파일을 https 서버에 올린다. GitHub Pages 가 무료: GitHub 에서 새 저장소(예: `rc-capacity`) → `dist/` 의 파일들을 업로드 → Settings → Pages → Branch `main`, folder `/ (root)` → 1~2분 뒤 `https://<아이디>.github.io/rc-capacity/`. 연구실 사람들은 그 주소를 스마트폰으로 열고 "홈 화면에 추가"(iPhone: 공유 버튼 → 홈 화면에 추가, Android: 메뉴 → 앱 설치)를 누르면 앱 아이콘으로 실행되고, 서비스워커가 캐시해 두어 오프라인에서도 열린다. 새 버전은 `build_dist.py` 를 다시 돌려 파일을 올리면 다음 실행 때 자동 갱신.
+2. **웹 주소로 공유 + 홈 화면 앱 (추천)**: **https://hyonnnnnn.github.io/rc-capacity/** 에 올라가 있다 (저장소 https://github.com/hyonnnnnn/rc-capacity, `gh-pages` 브랜치 = `dist/`). 갱신: `python3 build_dist.py` → `git add -A && git commit -m "..." && git push` → `git subtree push --prefix dist origin gh-pages`. 연구실 사람들은 그 주소를 스마트폰으로 열고 "홈 화면에 추가"(iPhone: 공유 버튼 → 홈 화면에 추가, Android: 메뉴 → 앱 설치)를 누르면 앱 아이콘으로 실행되고, 서비스워커가 캐시해 두어 오프라인에서도 열린다. 새 버전은 `build_dist.py` 를 다시 돌려 파일을 올리면 다음 실행 때 자동 갱신.
 3. **Claude 아티팩트 링크**: https://claude.ai/artifact/F4ZSJfPxLxHixJozJtna7R 를 Share 메뉴로 공유. 받는 사람도 Claude 계정이 필요.
 
 ### 컴퓨터 프로그램 (더블클릭 실행)
