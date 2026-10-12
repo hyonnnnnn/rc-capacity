@@ -1,5 +1,7 @@
 # rc-capacity — RC 단면 내력 계산기 + 보 해석 도구 모음
 
+**한국어** · [日本語](README.ja.md) · [English](README.en.md)
+
 요코하마국립대 콘크리트 연구실용. 土木学会 コンクリート標準示方書 기준.
 
 | 파일 | 무엇 | 실행 |
@@ -61,7 +63,7 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 - 수렴이 안 되면: `viscosity`를 0.001로, `es`를 40으로, `target_disp`를 줄여 보세요.
 - 이 폴더에서는 Abaqus를 실행하지 못했으므로 입력 파일 구조만 검증됨 (절점·요소 참조, 재료 표 단조성, 철근 위치).
 
-## 3D 비선형 FEM 페이지 (`rc-beam-3d.html`)
+## 3D 비선형 FEM (`rc-capacity.html` 안)
 
 브라우저 안에서 돌아가는 교육용 단순화 모델. 균열이 번지는 모습과 하중–처짐 곡선의 모양을 보는 용도. 정량 비교는 OpenSees나 Abaqus로.
 - 테스트(30×6×2 메시): 최대하중 / 등가응력블록 Mu 환산 = 3점 1.27, 4점 1.09, 6-D22+2-D16 0.99, 40×8×4 3점 1.17.
